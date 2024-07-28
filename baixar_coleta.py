@@ -14,8 +14,8 @@ navegador = webdriver.Chrome(ChromeDriverManager().install())
 navegador.maximize_window()
 navegador.get("https://airsupply.eslcloud.com.br/users/sign_in")
 
-navegador.find_element('xpath','//*[@id="user_email"]').send_keys("jose.sales@airsupplybr.com")
-navegador.find_element('xpath','//*[@id="user_password"]').send_keys("Airsupply@2024")
+navegador.find_element('xpath','//*[@id="user_email"]').send_keys("email")
+navegador.find_element('xpath','//*[@id="user_password"]').send_keys("senha")
 navegador.find_element('xpath','//*[@id="new_user"]/div[2]/div/div[1]/input').click()
 
 navegador.find_element('xpath','/html/body/div[2]/div/div/div[1]/ul[2]/li[3]/a').click()
